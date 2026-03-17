@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>globo</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; background: #f5f5f5; max-width: 620px; margin: 0 auto; }
+
+  .hero { width: 100%; overflow: hidden; }
+  .hero img { width: 100%; display: block; }
+
+  .bullets-bar { background: #c8102e; display: flex; }
+  .bullet-item {
+    flex: 1; padding: 9px 10px;
+    border-right: 1px solid rgba(255,255,255,0.25);
+    display: flex; gap: 5px; align-items: flex-start;
+  }
+  .bullet-item:last-child { border-right: none; }
+  .bullet-dot { color: #fff; font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+  .bullet-text { color: #fff; font-size: 11px; font-weight: 600; line-height: 1.4; }
+  .bullet-link {
+    display: inline-block; margin-top: 3px;
+    color: #ffe066; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.5px; text-decoration: none;
+  }
+
+  .cards-row { display: flex; background: #fff; border-top: 2px solid #e0e0e0; }
+  .card { flex: 1; border-right: 1px solid #e0e0e0; overflow: hidden; }
+  .card:last-child { border-right: none; }
+  .card img { width: 100%; height: 108px; object-fit: cover; display: block; }
+  .card-body { padding: 8px 9px 12px; }
+  .card-title { color: #c8102e; font-size: 13px; font-weight: 700; line-height: 1.35; margin-bottom: 6px; }
+  .card-sub { font-size: 10.5px; color: #333; line-height: 1.4; display: flex; gap: 4px; align-items: flex-start; }
+  .card-sub::before { content: '•'; color: #c8102e; font-size: 13px; flex-shrink: 0; margin-top: -1px; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="trump.png"/>
+</div>
+
+<div class="bullets-bar">
+  <div class="bullet-item">
+    <span class="bullet-dot">•</span>
+    <div><div class="bullet-text">Israel ataca reunião que definiria o novo líder do Irã, diz jornal</div></div>
+  </div>
+  <div class="bullet-item">
+    <span class="bullet-dot">•</span>
+    <div>
+      <div class="bullet-text">Agência: estrondos são ouvidos em Dubai, Abu Dhabi e Doha;</div>
+      <a class="bullet-link" href="#">SIGA</a>
+    </div>
+  </div>
+  <div class="bullet-item">
+    <span class="bullet-dot">•</span>
+    <div><div class="bullet-text">General do Irã ameaça centros econômicos do Oriente Médio</div></div>
+  </div>
+</div>
+
+<div class="cards-row">
+
+  <div class="card">
+    <img src="mulheres.png"/>
+    <div class="card-body">
+      <div class="card-title">Multidão no Irã vai a funeral de crianças; ONU pede apuração</div>
+      <div class="card-sub">Escalada nuclear pode ser fatal, diz especialista</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="trump2.png"/>
+    <div class="card-body">
+      <div class="card-title">Trump ameaça usar bases da Espanha sem autorização</div>
+      <div class="card-sub">O que está por trás do conflito entre EUA e Irã?</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="jato.png"/>
+    <div class="card-body">
+      <div class="card-title">Valores da guerra: drones de US$ 20 mil x mísseis de US$ 4 mi</div>
+      <div class="card-sub">Emirados criam corredor de segurança para voos</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
